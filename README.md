@@ -1,19 +1,22 @@
-# 🎬 Popular Movies Recommendation System
+# ❤️ Heart Disease Prediction Using ANN with Random Search Optimization
 
 ## 📌 Project Overview
 
-This project focuses on building a **Movie Recommendation System using Content-Based Filtering** with Python and Machine Learning techniques.
+This project focuses on predicting heart disease using an **Artificial Neural Network (ANN)** and improving model performance through **Random Search Hyperparameter Optimization**.
 
-The system analyzes movie-related information and recommends movies based on their content and similarities. It helps users discover movies that are similar to their interests.
+The project uses Deep Learning techniques to analyze heart disease data and classify whether a person is likely to have heart disease.
+
+Random Search is used to explore different hyperparameter combinations and identify a better-performing ANN configuration.
 
 ## 🎯 Objectives
 
-- Build a movie recommendation system.
-- Explore and analyze movie datasets.
-- Apply content-based filtering techniques.
-- Identify similarities between movies.
-- Recommend relevant movies based on movie content.
-- Understand the working of recommendation systems.
+- Predict heart disease using ANN.
+- Perform Exploratory Data Analysis (EDA).
+- Apply data preprocessing techniques.
+- Build an Artificial Neural Network model.
+- Optimize ANN hyperparameters using Random Search.
+- Improve model performance through hyperparameter tuning.
+- Evaluate the optimized model.
 
 ## 🛠️ Technologies Used
 
@@ -23,51 +26,73 @@ The system analyzes movie-related information and recommends movies based on the
 - NumPy
 - Matplotlib
 - Seaborn
+- TensorFlow
+- Keras
 - Scikit-learn
-- Machine Learning
 
-## 🧠 Recommendation Technique
+## 🧠 Model Used: Artificial Neural Network (ANN)
 
-**Content-Based Filtering**
+ANN is a Deep Learning model inspired by the structure of the human brain. It consists of interconnected neurons arranged in layers.
 
-Content-Based Filtering recommends movies by analyzing their features and content.
+### ANN Architecture
 
-It identifies similarities between movies and suggests other movies with similar characteristics.
+1. Input Layer
+2. Hidden Layers
+3. ReLU Activation Function
+4. Output Layer
+5. Sigmoid Activation Function (for binary classification, if used)
 
-### How It Works
+## 🔍 Random Search Optimization
 
-1. Load the movie dataset.
-2. Explore and understand movie information.
-3. Clean and preprocess the data.
-4. Extract relevant movie features.
-5. Analyze similarities between movies.
-6. Generate movie recommendations.
-7. Display recommended movies.
+Random Search is a hyperparameter optimization technique that randomly selects combinations of hyperparameters from a predefined search space.
+
+It helps explore different model configurations without testing every possible combination.
+
+### Hyperparameters that can be optimized
+
+- Number of hidden layers
+- Number of neurons
+- Learning rate
+- Batch size
+- Number of epochs
+- Optimizer
+- Activation function
 
 ## ⚙️ Project Workflow
 
 1. Import required libraries.
-2. Load the dataset.
+2. Load the heart disease dataset.
 3. Perform Exploratory Data Analysis (EDA).
-4. Handle missing values and preprocess data.
-5. Select relevant movie features.
-6. Apply content-based recommendation techniques.
-7. Calculate movie similarities.
-8. Generate recommendations based on movie selection.
+4. Analyze dataset features and target variable.
+5. Perform data preprocessing.
+6. Split data into training and testing sets.
+7. Build the ANN model.
+8. Train the ANN model.
+9. Apply Random Search for hyperparameter optimization.
+10. Identify the best hyperparameter configuration.
+11. Train the optimized ANN model.
+12. Evaluate model performance.
 
-## 📊 Key Features
+## 📊 Model Evaluation
 
-- Movie data analysis.
-- Content-based movie recommendations.
-- Movie similarity analysis.
-- Personalized movie discovery based on selected movie content.
+The model's performance can be evaluated using:
+
+- Accuracy
+- Loss
+- Confusion Matrix
+- Precision
+- Recall
+- F1-Score
+- Classification Report
+
+Training and validation accuracy/loss can also be visualized to understand model performance.
 
 ## 📂 Project Structure
 
 ```text
-PopularMoviesRecommandationSystem/
+HeartANN/
 │
-├── PopularMoviesContentbased.ipynb
+├── Heart_ANN_Random_Search_Model_Optimization.ipynb
 └── README.md
 ```
 
@@ -76,34 +101,45 @@ PopularMoviesRecommandationSystem/
 **Step 1: Clone the repository**
 
 ```bash
-git clone https://github.com/prajaktabidre99-create/PopularMoviesRecommandationSystem.git
+git clone https://github.com/prajaktabidre99-create/HeartANN.git
 ```
 
-**Step 2:** Open the project folder.
+**Step 2:** Navigate to the project folder.
 
-**Step 3:** Open `PopularMoviesContentbased.ipynb` in Google Colab.
+```bash
+cd HeartANN
+```
+
+**Step 3:** Open the notebook in Google Colab.
+
+`Heart_ANN_Random_Search_Model_Optimization.ipynb`
 
 **Step 4:** Upload or connect the required dataset.
 
-**Step 5:** Run all notebook cells to generate movie recommendations.
+**Step 5:** Run all notebook cells.
 
 ## 🚀 Applications
 
-- Movie recommendation platforms.
-- Online streaming services.
-- Movie discovery systems.
-- Personalized entertainment suggestions.
-- Recommendation system research.
+- Heart disease risk prediction research.
+- Healthcare data analysis.
+- Deep Learning applications.
+- Medical classification systems.
+- ANN model optimization.
+
+## ⚠️ Disclaimer
+
+This project is intended for educational and research purposes only. It is not a medical diagnostic tool and should not replace professional medical advice or examination.
 
 ## 📚 What I Learned
 
-- Recommendation System concepts.
-- Content-Based Filtering.
-- Data preprocessing and analysis.
-- Movie feature extraction.
-- Similarity-based recommendations.
-- Machine Learning applications.
+- Artificial Neural Networks (ANN).
+- Deep Learning model development.
+- Hyperparameter optimization.
+- Random Search technique.
+- Model evaluation and visualization.
+- Binary classification.
 
 ## 👩‍💻 Author
 
-**Sanika Babaso patil**
+**Sanika Patil**
+
